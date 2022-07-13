@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+    <html>
+           <head>
+          <title>Bài tập JavaScript</title>
+          
+  <style>
+    body{
+      background-repeat:  repeat-y;
+      background-size: 100% 100%;
+      text-align: center;
+      font-family: 'Fascinate', cursive;
+    }
+    h1{
+      text-align: center;
+      color: rgb(0, 0, 0);
+    }
+		#noidung{background: #20a7f5; height:250px; width:100%;color:#000000; font-size:25px;
+              text-align: center;
+              border-radius: 20px;
+              
+    }
+		button{background:#CDC1B6;
+            margin-left:10px;
+            border-radius:10px ;
+            height: 45px;
+            display: inline;
+    }
+    
+	</style>
+           </head>
+           <body>
+            <h1>Bài tập JavaScript</h1>
+            <p id="noidung"></p>
+          <button type="button" onclick="hienthi()">Thông tin cá nhân </button>
+          <button type="button" onclick="tinhtong()">Tính tổng</button>     
+          <button type="button" onclick="tinhtongchan()">Tính tổng chẵn</button>
+            <script>
+              function hienthi() {
+  document.getElementById("noidung").innerHTML = "Xin chào. Tôi là Nguyễn Thanh Tùng";
+              }
+             function tinhtong() {
+          let text =0;
+          for( let i=1 ; i<=10;i++){
+            text +=i;
+          }
+	document.getElementById("noidung").innerHTML =text ;
+              }
+            function tinhtongchan() {
+          let text =0;
+          for( let i=1 ; i<=10;i++){
+            if(i%2==0){
+            text +=i;
+          }
+        }
+	document.getElementById("noidung").innerHTML =text ;
+              }
+            </script>    
+         </body>
+    </html>
